@@ -102,7 +102,7 @@ def init_timeline():
         print('-' * 50)
 '''
 if __name__ == '__main__':
-    instances = get_instances_list(0,'name')
+    instances = get_instances_list(0,'users')
     inst = [{'instance': instance,
                 'last_tl_id': -1,
                 'processed': False,

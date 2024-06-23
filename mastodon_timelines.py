@@ -126,57 +126,6 @@ def check_rate_limits(remaining_queries, rate_limit_reset, instance, id, n=5):
             sleep(waiting_time)
             print(f"[{datetime.now()} | Crawler #{id:>2}][bold magenta] Rate limit ok for {instance}![/bold magenta]")
 
-def get_reblogs(url, header, params, instance, id, n):
-    """
-    Paginate over all available pages and extract rebloggers
-    url: link indicating reblogged_by page
-    header: header to be used for the request
-    params: any params involving the request (e.g., max number of items to return for each request)
-    instance: server where the request should be sent
-    id: current thread identifier
-    n: number of threads currently crawling
-    """
-    # Explored users
-    users = []
-
-    # First request is expected
-    condition = True
-
-    while condition:
-        sleep(1) # Being polite is always fun! :)
-        page_response = requests.get(url, headers=header, params=params, timeout=10)
-        if page_response.status_code == requests.codes.ok:
-            page_response_content = page_response.json()
-
-            if len(page_response_content) > 0:
-                for user in page_response_content:
-                    # If it's local, fix the handle
-                    user_acct = user['acct']
-                    if '@' not in user_acct:
-                        user_acct = user_acct + '@' + instance
-                   
-                    # Adding to the list
-                    users.append(user_acct.lower())
-
-                if 'X-RateLimit-Remaining' in page_response.headers:
-                    remaining_queries = page_response.headers['X-RateLimit-Remaining']
-                    rate_limit_reset = page_response.headers['X-RateLimit-Reset']
-                    check_rate_limits(remaining_queries, rate_limit_reset, instance, id, n)
-
-                if 'next' in page_response.links:
-                    condition = True
-                    url = page_response.links['next']['url']
-
-                else:
-                    condition = False
-            else:
-                condition = False
-
-        # If not ok, we should stop iterating
-        else:
-            condition = False
-
-    return users
 
 def get_timeline(id, db, n, max_iter):
     """
@@ -186,7 +135,7 @@ def get_timeline(id, db, n, max_iter):
     n: number of currently crawling threads
     """
     
-    known_apps = ['Moa', 'poster', 'Mastodon Twitter Crossposter']
+    #known_apps = ['Moa', 'poster', 'Mastodon Twitter Crossposter']
 
     try:
         # Get redis connection
@@ -277,46 +226,45 @@ def get_timeline(id, db, n, max_iter):
                                     # Checking if it is crossposted
                                     # 1. We match some app names
                                     # print(status)
-                                    if 'application' in status and status['application'] is not None:
-                                        if 'name' in status['application'] and status['application']['name'] is not None:
-                                            app_name = status['application']['name'].lower()
-                                            for name in known_apps:
-                                                if name.lower() in app_name:
-                                                    crosspost = True
-                                                    break
+                                    #if 'application' in status and status['application'] is not None:
+                                    #    if 'name' in status['application'] and status['application']['name'] is not None:
+                                    #        app_name = status['application']['name'].lower()
+                                    #        for name in known_apps:
+                                    #            if name.lower() in app_name:
+                                    #                crosspost = True
+                                    #                break
                                     
                                     # # 2. We match some signals
                                     # if not crosspost and 'RT @' in content or 'crosspost' in content.lower() or '🐦🔗' in content:
                                     #     crosspost = True
 
                                     # If it is cross-posted, push it!
-                                    if crosspost:
-                                        cross_posted_statuses += 1
-                                        rebloggers = []
+                                    #if crosspost:
+                                    #    cross_posted_statuses += 1
+                                    #    rebloggers = []
                             
                                         # Checking if it has re-blogs too
-                                        if status['reblogs_count'] > 0:
-                                            # Preparing reblogs url and params
-                                            url_reblogs = f"https://{instance_name}/api/v1/statuses/{last_seen}/reblogged_by"
-                                            params_reblogs = {'limit': '80'}
+                                    #    if status['reblogs_count'] > 0:
+                                    #        # Preparing reblogs url and params
+                                    #        url_reblogs = f"https://{instance_name}/api/v1/statuses/{last_seen}/reblogged_by"
+                                    #        params_reblogs = {'limit': '80'}
 
                                             # Getting reblogging users
-                                            rebloggers = get_reblogs(url=url_reblogs, header=header_network, params=params_reblogs, instance=instance_name, id=id, n=n)
+                                    #        rebloggers = get_reblogs(url=url_reblogs, header=header_network, params=params_reblogs, instance=instance_name, id=id, n=n)
 
                                             # We need to get reblogs!
-                                            reblog_count += len(rebloggers)
-                                            reblogged_statuses += 1
+                                    #        reblog_count += len(rebloggers)
+                                    #        reblogged_statuses += 1
                                         
                                         # In any case, even without reblogs, we push the cross-posted status
                                         # Preparing data for db insertion
-                                        record = {
+                                    record = {
                                             'x_id' : status['id'],
                                             'x_instance' : instance_name,
                                             'x_ts' : status['created_at'],
                                             'x_text' : text,
                                             'x_replies' : status['replies_count'],
                                             'x_reblogs' : status['reblogs_count'],
-                                            'x_reblogs_real' : len(rebloggers),
                                             'x_favourite' : status['favourites_count'],
                                             'x_app_name' : status['application']['name'],
                                             'x_user_handle' : status['account']['acct'],
@@ -324,11 +272,10 @@ def get_timeline(id, db, n, max_iter):
                                             'x_user_followers' : status['account']['followers_count'],
                                             'x_user_following' : status['account']['following_count'],
                                             'x_user_statuses' : status['account']['statuses_count'],
-                                            'x_user_last_status' : status['account']['last_status_at'],
-                                            'rebloggers' : ",".join([r for r in rebloggers]) if len(rebloggers) > 0 else ""
+                                            'x_user_last_status' : status['account']['last_status_at']
                                         }
 
-                                        to_be_pushed.append(record)
+                                    to_be_pushed.append(record)
 
                                 # We iterated over all statuses, now we can push them
                                 if len(to_be_pushed) > 0:
