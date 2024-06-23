@@ -105,4 +105,4 @@ if __name__ == '__main__':
     instances = get_instances_list(0, 'name')
     save_dir = 'C:\\Users\\Nicola\\Downloads\\'
     with open(f'{save_dir}instances.json','w') as f:
-        json.dump({'instances':instances},fp=f)
+        json.dump({'instances':instances,'processed':False},fp=f)
