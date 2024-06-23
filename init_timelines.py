@@ -102,7 +102,11 @@ def init_timeline():
         print('-' * 50)
 '''
 if __name__ == '__main__':
-    instances = get_instances_list(0, 'name')
-    save_dir = '.\\'
-    with open(f'{save_dir}instances.json','w') as f:
-        json.dump({'instances':instances,'processed':False},fp=f)
+    instances = get_instances_list(0,'name')
+    inst = [{'instance': instance,
+                'last_tl_id': -1,
+                'processed': False,
+                'total_statuses': 0} for instance in instances]
+    with open('.\\instances.jsonl','w') as f:
+        for instance in inst:
+            f.write(json.dumps(instance)+'\n')
