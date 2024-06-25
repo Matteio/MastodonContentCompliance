@@ -19,29 +19,7 @@ from bs4 import BeautifulSoup
 logger = logging.getLogger('root')
 logging.basicConfig(filename='cascading_mastodon.log', filemode='a', format='%(asctime)s | %(filename)s:%(lineno)s | %(funcName)20s() | %(message)s')
 
-
-def get_mongo_connection():
-    """
-    Get connection to the MongoDB collection
-    """
-    print(f"[{datetime.now()} | connect_to_mongo][italic] Connecting to MongoDB..[/italic]")
-
-    try:
-        client = MongoClient()
-        print(f"[{datetime.now()} | connect_to_mongo][italic green] Connected to MongoDB successfully![/italic green]")
-
-        print(f"[{datetime.now()} | connect_to_mongo][italic] Obtaining database..[/italic]")
-        database = client['cascading']
-        print(f"[{datetime.now()} | connect_to_mongo][italic green] Database obtained successfully![/italic green]")
-        print('-' * 30)
-        return database
-
-    except Exception as e:
-        print(f"[{datetime.now()} | connect_to_mongo][italic red] Error {e} on line {sys.exc_info()[-1].tb_lineno}[/italic red]")
-        print('-' * 30)
-        logging.error("Exception occurred while connecting to MongoDB", exc_info=True)
-        return None
-
+#access token profilo matteo: tawjA3B7n2PaWzTPfE0cr3BLo96QlWo3zagZd_zLoA8
 def get_unexplored_instances(db):
     """
     Get the list of Mastodon instances to be still explored
