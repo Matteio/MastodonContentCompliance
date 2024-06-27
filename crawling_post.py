@@ -146,7 +146,7 @@ def thread_execution(thread_id, iterations, already_c):
     crawled = []
     for instance in my_instances:
         instance_name = instance['instance']
-        if instance_name not in already_c:
+        if f'{instance_name}.json' not in already_c:
             crawled.append(crawl_instance(instance,int(iterations), int(thread_id)))
             print(f'thread[{int(thread_id)}] crawled instance: {instance_name}')
         else:
