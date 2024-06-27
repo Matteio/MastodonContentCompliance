@@ -1,0 +1,152 @@
+[
+    {
+        "instance": "mastodon.social",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "good.news",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "pawoo.net",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "test.pawoo.org",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "mstdn.jp",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "baraag.net",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "mastodon.cloud",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "mstdn.social",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "pravda.me",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "mastodon.online",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "mastodon.world",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "mas.to",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "pixelfed.social",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "kids.0px.io",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "techhub.social",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "universeodon.com",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "mastodonapp.uk",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "masto.ai",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "mastodon.uno",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "mastodon.sdf.org",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "infosec.exchange",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "c.im",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "fosstodon.org",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "brighteon.social",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "dev.brighteon.social",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    }
+]

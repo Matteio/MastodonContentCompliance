@@ -1,0 +1,152 @@
+[
+    {
+        "instance": "hachyderm.io",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "mastodon.top",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "mstdn.party",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "social.vivaldi.net",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "loforo.com",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "troet.cafe",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "mastodon.nl",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "pixelfed.de",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "pixelfed.de.",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "ohai.social",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "fedibird.com",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "sfba.social",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "mamot.fr",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "mastodon.art",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "mindly.social",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "mast.lat",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "tkz.one",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "mstdn.ca",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "mastodon.gamedev.place",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "toot.community",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "piaille.fr",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "mastodon.scot",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "mastodon.xyz",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "aethy.com",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    },
+    {
+        "instance": "qoto.org",
+        "last_tl_id": -1,
+        "processed": false,
+        "total_statuses": 0
+    }
+]
