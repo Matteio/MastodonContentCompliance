@@ -4,13 +4,27 @@ import json
 import os
 import threading
 import datetime
-from time import  timezone
+from datetime import timedelta, timezone
 from time import sleep
 
 
 n_instances = 1000
 n_t = 40
 total_instances = [0]*n_t
+
+def is_in_3months(t):
+    
+    # Time provided by Mastodon is in Zulu time
+    refresh_time = datetime.strptime(t, "%Y-%m-%dT%H:%M:%S.%fZ")
+    current_time = datetime.now(timezone.utc)
+
+    # Remove timezone info for comparison
+    current_time = current_time.replace(tzinfo=None)
+    refresh_time = refresh_time.replace(tzinfo=None)
+
+    # Check if the refresh time is more than 90 days ago
+    return current_time - refresh_time <= timedelta(days=90)
+
 
 def get_unprocessed_instances(file):
     with open(file, 'r') as f:
@@ -97,18 +111,22 @@ def crawl_instance(instance_dict, iterations, thread_id):
         page_response = requests.get(url_timeline, headers=header_network, params=params, timeout=10)
         response_json = page_response.json()
         for status in response_json:
-            content = status['content']
-            text = BeautifulSoup(content).get_text()
-            record = {
-                'id': status['id'],
-                'user_id': status['account']['id'],
-                'user_posts_count': status['account']['statuses_count'],
-                'text':text,
-                'tags': status['tags'],
-                'language': status['language'],
-                'favourites': status['favourites_count']
-            }
-            instance['records'].append(record)
+            date = status['created_at']
+            if(is_in_3months(date)):
+                content = status['content']
+                text = BeautifulSoup(content).get_text()
+                record = {
+                    'id': status['id'],
+                    'user_id': status['account']['id'],
+                    'user_posts_count': status['account']['statuses_count'],
+                    'text':text,
+                    'tags': status['tags'],
+                    'language': status['language'],
+                    'favourites': status['favourites_count']
+                }
+                instance['records'].append(record)
+            else:
+                break
         if 'X-RateLimit-Remaining' in page_response.headers:
             remaining_queries = page_response.headers['X-RateLimit-Remaining']
             rate_limit_reset = page_response.headers['X-RateLimit-Reset']
