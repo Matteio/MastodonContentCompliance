@@ -136,6 +136,8 @@ def crawl_instance(instance_dict, iterations, thread_id):
     except Exception:
         print(f'l\' istanza {instance_name} non risponde')
         return None
+    with open(f'./results/{instance_name}.json','w') as f:
+        json.dump(instance,f)
     return instance
 
 
