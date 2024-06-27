@@ -141,21 +141,25 @@ def crawl_instance(instance_dict, iterations, thread_id):
     return instance
 
 
-def thread_execution(thread_id, iterations):
+def thread_execution(thread_id, iterations, already_c):
     my_instances = json.load(open(f'./jsons/instances{int(thread_id)}.json','r'))
     crawled = []
     for instance in my_instances:
-        crawled.append(crawl_instance(instance,int(iterations), int(thread_id)))
         instance_name = instance['instance']
-        print(f'thread[{int(thread_id)}] crawled instance: {instance_name}')
+        if instance_name not in already_c:
+            crawled.append(crawl_instance(instance,int(iterations), int(thread_id)))
+            print(f'thread[{int(thread_id)}] crawled instance: {instance_name}')
+        else:
+            print(f'instance {instance_name} already crawled')
     total_instances[int(thread_id)] = crawled
     
 
 def run_threads( start, iterations):
     files = os.listdir('./jsons')
+    already_c = os.listdir('./results')
     threads = []
     for thread_id in range(start, len(files),2):
-        threads.append(threading.Thread(target=thread_execution, kwargs={'thread_id':thread_id, 'iterations':iterations}))
+        threads.append(threading.Thread(target=thread_execution, kwargs={'thread_id':thread_id, 'iterations':iterations, 'already_c':already_c}))
     
     print('starting threads')
     for thread in threads:
