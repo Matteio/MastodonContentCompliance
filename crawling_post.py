@@ -4,8 +4,9 @@ import json
 import os
 import threading
 import datetime
-from datetime import timedelta, timezone
+from datetime import timedelta, timezone, datetime
 from time import sleep
+import sys
 
 
 n_instances = 1000
@@ -70,7 +71,6 @@ def check_rate_limits(remaining_queries, rate_limit_reset, instance, id, n=5):
 def get_unprocessed_split(n, file):
     unp = get_unprocessed_instances(file)
     size = n_instances//n
-    split = []
     it = iter(unp)
     i=0
     while i < n:
@@ -94,58 +94,91 @@ def crawl_instance(instance_dict, iterations, thread_id):
     instance_name = instance_dict['instance']
     last_tl_id = instance_dict['last_tl_id']
     instance_rules_url = f'https://{instance_name}/api/v1/instance/rules'
-    rules = requests.get(instance_rules_url).json()
-    instance = {
-        'name':instance_name,
-        'rules': rules,
-        'records':[]
-    }
-        
-    header_network = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:91.0) Gecko/20100101 Firefox/91.0'}
-    params = {'limit': '40', 'local': 'true'}
-    url_timeline = f"https://{instance_name}/api/v1/timelines/public"
+    try:
+        rules = requests.get(instance_rules_url).json()
+        instance = {
+            'name':instance_name,
+            'rules': rules,
+            'records':[]
+        }
+            
+        header_network = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; rv:91.0) Gecko/20100101 Firefox/91.0'}
+        params = {'limit': '40', 'local': 'true'}
+        url_timeline = f"https://{instance_name}/api/v1/timelines/public"
 
-    if last_tl_id != -1:
-        params['max_id'] = last_tl_id
-    for _ in range(iterations):
-        page_response = requests.get(url_timeline, headers=header_network, params=params, timeout=10)
-        response_json = page_response.json()
-        for status in response_json:
-            date = status['created_at']
-            if(is_in_3months(date)):
-                content = status['content']
-                text = BeautifulSoup(content).get_text()
-                record = {
-                    'id': status['id'],
-                    'user_id': status['account']['id'],
-                    'user_posts_count': status['account']['statuses_count'],
-                    'text':text,
-                    'tags': status['tags'],
-                    'language': status['language'],
-                    'favourites': status['favourites_count']
-                }
-                instance['records'].append(record)
-            else:
-                break
-        if 'X-RateLimit-Remaining' in page_response.headers:
-            remaining_queries = page_response.headers['X-RateLimit-Remaining']
-            rate_limit_reset = page_response.headers['X-RateLimit-Reset']
-            check_rate_limits(remaining_queries=remaining_queries, rate_limit_reset=rate_limit_reset, instance=instance_name, id=thread_id)
-
+        if last_tl_id != -1:
+            params['max_id'] = last_tl_id
+        for _ in range(iterations):
+            page_response = requests.get(url_timeline, headers=header_network, params=params, timeout=10)
+            if page_response.status_code == requests.codes.ok:
+                response_json = page_response.json()
+                for status in response_json:
+                    date = status['created_at']
+                    if(is_in_3months(date)):
+                        content = status['content']
+                        text = BeautifulSoup(content).get_text()
+                        record = {
+                            'id': status['id'],
+                            'user_id': status['account']['id'],
+                            'user_posts_count': status['account']['statuses_count'],
+                            'text':text,
+                            'tags': status['tags'],
+                            'language': status['language'],
+                            'favourites': status['favourites_count']
+                        }
+                        instance['records'].append(record)
+                    else:
+                        break
+            if 'X-RateLimit-Remaining' in page_response.headers:
+                remaining_queries = page_response.headers['X-RateLimit-Remaining']
+                rate_limit_reset = page_response.headers['X-RateLimit-Reset']
+                check_rate_limits(remaining_queries=remaining_queries, rate_limit_reset=rate_limit_reset, instance=instance_name, id=thread_id)
+    except Exception:
+        print(f'l\' istanza {instance_name} non risponde')
+        return None
     return instance
 
 
 def thread_execution(thread_id, iterations):
-    my_instances = json.load(open(f'./jsons/instances{thread_id}.json','r'))
+    my_instances = json.load(open(f'./jsons/instances{int(thread_id)}.json','r'))
     crawled = []
     for instance in my_instances:
-        crawled.append(crawl_instance(instance,iterations, thread_id))
-    total_instances[thread_id] = crawled
+        crawled.append(crawl_instance(instance,int(iterations), int(thread_id)))
+        instance_name = instance['instance']
+        print(f'thread[{int(thread_id)}] crawled instance: {instance_name}')
+    total_instances[int(thread_id)] = crawled
+    
+
+def run_threads( start, iterations):
+    files = os.listdir('./jsons')
+    threads = []
+    for thread_id in range(start, len(files),2):
+        threads.append(threading.Thread(target=thread_execution, kwargs={'thread_id':thread_id, 'iterations':iterations}))
+    
+    print('starting threads')
+    for thread in threads:
+        thread.start()
+    
+    print('joining threads')
+    for thread in threads:
+        thread.join()
+
+    print('threads finished')
+    flattened = []
+    for l in total_instances:
+        for item in l:
+            flattened.append(item)
+    with open(f'./crawling{start}.json', 'w') as f:
+        json.dump(flattened, f, indent=4)
     
 
 
 
+
+
 if __name__ == '__main__':
-    split = get_unprocessed_split(40,'./instances.jsonl')
-    for elem in split:
-        assert len(elem) == 25
+    start = sys.argv[1]
+    it = sys.argv[2]
+    print('starting crawling...')
+    run_threads(int(start), int(it))
+    print('end crawling...')
