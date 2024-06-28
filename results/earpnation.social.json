@@ -1,0 +1,42 @@
+{
+    "name": "earpnation.social",
+    "rules": [
+        {
+            "id": "8",
+            "text": "No illegal content under US, French, or European law"
+        },
+        {
+            "id": "9",
+            "text": "Do not use slurs or racist, sexist, homophobic, transphobic, ableist or otherwise discriminatory or hateful jokes or language or promote white supremacy, anti-Semitism, transphobia or other hateful ideologies."
+        },
+        {
+            "id": "10",
+            "text": "Do not harass anyone, participate in group harassment of anyone, or otherwise engage in personal attacks. Posting or threatening to post other people\u2019s personally identifying information (\u201cdoxing\u201d) constitutes harassment."
+        },
+        {
+            "id": "11",
+            "text": "Do not be intentionally antagonistic. A post or reply designed to provoke a confrontation is not acceptable."
+        },
+        {
+            "id": "12",
+            "text": "Do not use automated tools to toot without participating in the community. It is fine to post with an automated tool so long as you are an active member of the earpnation community and respond to replies you receive here. Unmonitored accounts that post automatically are not acceptable."
+        },
+        {
+            "id": "13",
+            "text": "Do not post spam. Toots that are nothing other than a link and/or contain an inordinate number of hashtags are spam, as does any overly commercial self-promotion. (It is fine to toot about your own projects and share what you are excited to be working on \u2014 just keep the toot itself interesting)."
+        },
+        {
+            "id": "14",
+            "text": "Do not post about inflammatory, controversial subjects without a Content Warning."
+        },
+        {
+            "id": "15",
+            "text": "Do not engage in name calling, ad hominem attacks, or any other uncivil behavior; criticize ideas or behavior and never people."
+        },
+        {
+            "id": "16",
+            "text": "Do not tone police. Toots may violate the standards of civility we set on earpnation, but you should not criticize users for their tone. Report them or feel free to block them. In neither case should you criticize their tone."
+        }
+    ],
+    "records": []
+}

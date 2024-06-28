@@ -1,0 +1,18 @@
+{
+    "name": "zpravobot.news",
+    "rules": [
+        {
+            "id": "1",
+            "text": "Nezneu\u017e\u00edvejte server ani jeho API."
+        },
+        {
+            "id": "4",
+            "text": "Nesna\u017ete se s boty komunikovat, neodpov\u00ed v\u00e1m."
+        },
+        {
+            "id": "5",
+            "text": "U\u017e\u00edvejte informace uv\u00e1\u017eliv\u011b."
+        }
+    ],
+    "records": []
+}
