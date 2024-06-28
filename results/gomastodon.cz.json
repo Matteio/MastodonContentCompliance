@@ -1,0 +1,10 @@
+{
+    "name": "gomastodon.cz",
+    "rules": [
+        {
+            "id": "1",
+            "text": "There is only one rule: No illegal activities and post on this server"
+        }
+    ],
+    "records": []
+}

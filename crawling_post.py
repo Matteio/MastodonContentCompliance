@@ -63,9 +63,9 @@ def check_rate_limits(remaining_queries, rate_limit_reset, instance, id, n=5):
     if int(remaining_queries) <= int(n):  # a bit of trade-off, to avoid getting banned
         waiting_time = get_waiting_time(rate_limit_reset)
         if waiting_time > 0:
-            print(f"[{datetime.now()} | Crawler #{id:>2}][bold magenta] Rate limit reached for {instance} waiting for {waiting_time} sec.[/bold magenta]")
+            #print(f"[{datetime.now()} | Crawler #{id:>2}][bold magenta] Rate limit reached for {instance} waiting for {waiting_time} sec.[/bold magenta]")
             sleep(waiting_time)
-            print(f"[{datetime.now()} | Crawler #{id:>2}][bold magenta] Rate limit ok for {instance}![/bold magenta]")
+            #print(f"[{datetime.now()} | Crawler #{id:>2}][bold magenta] Rate limit ok for {instance}![/bold magenta]")
 
     
 def get_unprocessed_split(n, file):
@@ -137,7 +137,7 @@ def crawl_instance(instance_dict, iterations, thread_id):
         print(f'l\' istanza {instance_name} non risponde')
         return None
     with open(f'./results/{instance_name}.json','w') as f:
-        json.dump(instance,f)
+        json.dump(instance,f,indent=4)
     return instance
 
 
