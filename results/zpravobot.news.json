@@ -3,15 +3,15 @@
     "rules": [
         {
             "id": "1",
-            "text": "Nezneu\u017e\u00edvejte server ani jeho API."
+            "text": "Nezneužívejte server ani jeho API."
         },
         {
             "id": "4",
-            "text": "Nesna\u017ete se s boty komunikovat, neodpov\u00ed v\u00e1m."
+            "text": "Nesnažte se s boty komunikovat, neodpoví vám."
         },
         {
             "id": "5",
-            "text": "U\u017e\u00edvejte informace uv\u00e1\u017eliv\u011b."
+            "text": "Užívejte informace uvážlivě."
         }
     ],
     "records": []

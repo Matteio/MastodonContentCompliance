@@ -1,1 +1,10 @@
-{"name": "good.news", "rules": [{"id": "1", "text": "\u672c\u5e73\u53f0\u7981\u6b62\u4efb\u4f55\u8bc8\u9a97\u9ec4\u63a8\uff01\u8bc8\u9a97\u8d26\u53f7\u8bf7\u81ea\u89c9\u6b62\u6b65\u3001\u53d1\u73b0\u79d2\u5220\uff01"}], "records": []}
+{
+    "name": "good.news",
+    "rules": [
+        {
+            "id": "1",
+            "text": "本平台禁止任何诈骗黄推！诈骗账号请自觉止步、发现秒删！"
+        }
+    ],
+    "records": []
+}
