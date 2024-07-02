@@ -1,0 +1,865 @@
+{
+    "name": "wxw.moe",
+    "rules": [
+        {
+            "id": "67",
+            "text": "\u62d2\u7edd\u771f\u4eba\u4e0d\u96c5\u5185\u5bb9 / No inappropriate real-life content."
+        },
+        {
+            "id": "68",
+            "text": "\u4e0d\u53c2\u4e0e\u4e09\u6b21\u5143\u952e\u653f\uff0c\u5305\u62ec\u8f6c\u53d1 / Avoid real-world politics."
+        },
+        {
+            "id": "69",
+            "text": "\u7981\u6b62\u53d1\u9001 \u8fdd\u53cd\u9999\u6e2f\u6cd5\u5f8b \u7684\u5185\u5bb9 / Don't post anything illegal in Hong Kong."
+        },
+        {
+            "id": "70",
+            "text": "NSFW \u56fe\u7247\uff0c\u987b\u6807\u8bb0\u4e3a \u201c\u654f\u611f\u5185\u5bb9\u201d / Mark NSFW images as \"Sensitive\"."
+        },
+        {
+            "id": "71",
+            "text": "NSFW \u5185\u5bb9\uff0c\u4f7f\u7528 \u201cCW\u201d \u529f\u80fd\u6298\u53e0 / Fold NSFW content with \"CW\"."
+        },
+        {
+            "id": "72",
+            "text": "\u8c22\u7edd \u65e0\u610f\u4e49\u5237\u5c4f\uff0c\u5e7f\u544a\u63a8\u9001 \u7c7b\u7528\u6237\u6ce8\u518c\u4f7f\u7528 / No spam or ads."
+        },
+        {
+            "id": "73",
+            "text": "\u5c0a\u91cd\u4ed6\u4eba\uff0c\u52ff\u5f15\u6218\uff0c\u52ff\u53d1\u8868\u653b\u51fb\u6027\u8a00\u8bba / Be respectful, no trolling or aggression."
+        },
+        {
+            "id": "74",
+            "text": "\u6ce8\u518c\u5ba1\u6838\u8bf7\u56de\u7b54\u4e0b\u5217\u95ee\u9898\uff1a / To complete your registration, please answer the following questions:"
+        },
+        {
+            "id": "75",
+            "text": "\u2460 \u4e3a\u4ec0\u4e48\u6ce8\u518c\u545c\u545c\u7ad9\uff1f/ Why do you want to register on this instance?"
+        },
+        {
+            "id": "76",
+            "text": "\u2461 \u7b80\u7b54 ACGN \u7684\u542b\u4e49\uff1f/ What does ACGN stand for?"
+        },
+        {
+            "id": "77",
+            "text": "\u2462 \u540c\u610f\u545c\u545c\u7ad9\u7684\u793e\u533a\u89c4\u5219\uff1f/ Do you agree with the community rules of this instance?"
+        },
+        {
+            "id": "78",
+            "text": "\ud83c\udf38 \u7f3a\u9879\u6216\u9519\u8bef\u5c06\u88ab\u62d2\u7edd ... / Incomplete or nonsensical responses will result in rejection ..."
+        },
+        {
+            "id": "79",
+            "text": "\u8be6\u7ec6\u793e\u533a\u89c4\u5219\u89c1\uff1a / For detailed community rules, please see:"
+        },
+        {
+            "id": "80",
+            "text": "https://wxw.moe/about"
+        },
+        {
+            "id": "82",
+            "text": "\u4f7f\u7528\u672c\u7ad9\u4ee3\u8868\u60a8\u540c\u610f\u4e86\u8fd9\u4e9b\u89c4\u5219\u4e0e\u653f\u7b56\uff0c\u6ce8\u518c\u524d\u8bf7\u52a1\u5fc5\u4ed4\u7ec6\u9605\u8bfb\uff01/ By using this instance, you agree to these rules and policies. Please be sure to read them carefully before registering!"
+        }
+    ],
+    "records": [
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "9"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "6"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "6"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "9"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "6"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "9"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "9"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "7"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "9"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "7"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "6"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "9"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "7"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "9"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "9"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "5"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "4"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "9"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "6"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "7"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "7"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "9"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "6"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "6"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "6"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "4"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "4"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "9"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "7"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "6"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "4"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "6"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "4"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "9"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "4"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "6"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "9"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "9"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "6"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "6"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "5"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "9"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "6"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "9"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "6"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "7"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "6"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        },
+        {
+            "id": "112690462130529312",
+            "text": "\u6709\u65f6\u5019\u542c\u540c\u5b66\u6f14\u5531\u4f1a\u840c\u751f\u4e00\u79cd\u201c\u600e\u4e48\u8fd9\u4e48talented\u554a\u201d\u7684\u60f3\u6cd5\uff0c\u597d\u4e3a\u4ed6\u4eec\u9ad8\u5174",
+            "tests": [
+                {
+                    "instruction": "You are a decentralized social-network instance's moderator. Your role is to check if utent's post respects the instance rules. You must assign each post a score from 0 (if the post violate completely the instance's rules) to 10 (if the post respects all the instance's rules). Your response must be only the score number and anything else.",
+                    "score": "8"
+                },
+                {
+                    "instruction": "You are a decentralized social-network instance's owner. Your role is to check if utent's post respects the instance rules. In order to classify posts you have to assign each post a score from 0(if the post violate completely the instance's rules) to 10(if the post respects all the instance's rules). You must be very strict in your evaluations. Please pay a lot of attention and let's think step by step. Your response must be only the score number and anything else.",
+                    "score": "8"
+                }
+            ]
+        }
+    ]
+}
