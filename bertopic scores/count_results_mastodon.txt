@@ -1,0 +1,3 @@
+Aligned Count: 49400
+Total Count: 321049
+Alignment / Total : 0.1539
