@@ -14,5 +14,5 @@ garantire la conformit\`a dei post alle regole stabilite in ciscuna istanza a vo
 5. Relazione dettagliata del presente lavoro
 <br><br>
 ***contatti:***<br>
-> nicolagabriele1999@gmail.com
+> nicolagabriele1999@gmail.com <br>
 > capalbo25@gmail.com
