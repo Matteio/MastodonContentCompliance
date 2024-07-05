@@ -1,4 +1,4 @@
-[![App Platorm](https://cubitude.unical.it/assets/media/logo-unical-new.png)
+![App Platorm](https://cubitude.unical.it/assets/media/logo-unical-new.png)
 # ***MASTODON CONTENT COMPLIANCE***
 ***authors:*** Nicola Gabriele, Matteo Capalbo <br>
 MASTODON CONTENT COMPLIANCE è un elaborato svolto per l'esame finale del corso di Social Network e media Analysis.<br>
