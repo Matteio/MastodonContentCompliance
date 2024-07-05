@@ -1,8 +1,0 @@
-Metriche da calcolare sugli score:
-
-Score medio per ogni istanza e per ogni prompt
-Deviazione standard per ogni istanza
-Score medio generale per prompt
-Deviazione standard generale
-Deviazione standard tra i prompt
-
