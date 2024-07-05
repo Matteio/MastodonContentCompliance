@@ -11,3 +11,8 @@ garantire la conformit\`a dei post alle regole stabilite in ciscuna istanza a vo
 2. File json con i risultati del crawling dei post (nella cartella results)
 3. File json con gli score di allineamento assegnati da llama3 a ciascun post (nella cartella scores)
 4. Diversi notebook che abbiamo utilizzato per effettuare alcuni task al contorno (come il calcolo delle metriche e l'elaborazione dei post attraverso llama)
+5. Relazione dettagliata del presente lavoro
+<br><br>
+***contatti:***<br>
+> nicolagabriele1999@gmail.com
+> capalbo25@gmail.com
