@@ -16,3 +16,6 @@ garantire la conformit\`a dei post alle regole stabilite in ciascuna istanza a v
 ***contatti:***<br>
 > nicolagabriele1999@gmail.com <br>
 > capalbo25@gmail.com
+
+Acknowledgment:
+Il lavoro da noi condotto è stato poortato avanti sotto la supervisione del MLN-team del DIMES-UNICAL https://mlnteam-unical.github.io/
